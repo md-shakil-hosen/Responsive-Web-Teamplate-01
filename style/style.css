@@ -1,6 +1,7 @@
 /*========== Font Awsome=============*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
 /*=========== common style=============*/
 body{
     margin: 0;
@@ -20,7 +21,7 @@ hr{
     width: 90%;
     margin: 0 auto;
 }
-/*========Header Sextion============*/
+/*========Header Section Start============*/
 .navbar{
     display:flex;
     justify-content: space-between;
@@ -46,8 +47,8 @@ hr{
    border-radius: 2px;
    margin-right: 30px;
 }
-
-/*================= hero-section =============*/
+/*================Header Section End============*/
+/*================= Hero-section Start =============*/
 .hero_section{
     background-color: #2D25A0;
     ;
@@ -94,7 +95,8 @@ hr{
 transition: ease-in 1s; 
 background-color: #3dbafd;
 }
-/*=========Palyer Information==========*/
+/*================= Hero-section End =============*/
+/*===============Palyer Information Section Start==========*/
 .players-cards{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -125,8 +127,8 @@ background-color: #3dbafd;
     font-weight: 400;
     text-align: justify;
 }
-
-/* =================subscrib section============= */
+/*===============Palyer Information Section End==========*/
+/* =================Contact  section Start----============= */
 .subscrib{
     margin-top: 80px;
     width: 100%;
@@ -159,11 +161,11 @@ input{
     color: white;
     border-radius: 5px;
 }
-/*===========Match Preview===========*/
+/* =================Contact  section End ============= */
+/*==================Match Preview Section Start===========*/
 .match_preview{
     display: grid;
-    grid-template-columns: repeat(2, 1fr
-    );
+    grid-template-columns: repeat(2, 1fr);
     margin-top: 100px;
 }
 .preview_head{
@@ -187,7 +189,8 @@ input{
     height: 420px;
     padding-left: 20px;
 }
-/*==================Mission=========================*/
+/*==================Match Preview Section End===========*/
+/*==================Mission Details Section Start=============*/
 .mission{
     height: 180px;
     margin-bottom: 400px;
@@ -218,7 +221,8 @@ input{
     border: 2px solid #E02C6D;
     transition: ease-in-out 2s;
 }
-/*================footer section=====================*/
+/*==================Mission Details Section End=============*/
+/*===================Footer Section Start=====================*/
 .footer{
     display: flex;
     flex-direction: column;
@@ -248,10 +252,15 @@ input{
     color: #E02C6D;
     transition: ease 2s;
 }
-/*======Media Queries=========*/
-/* Media Quary */
+/*===================Footer Section End=====================*/
 
-/*-============------Quary  For Smaller Smartphone================*/
+
+
+
+/*-============================================================
+        Quary  For Smaller Smartphone-
+ Responsive Devise ( pixel-2)/ 411-731 /100%
+=============================================================*/
 
 @media only screen and (max-width:480px) {
     .navbar{
@@ -312,12 +321,28 @@ input{
         font-size: 30px;
     }
     .submit{
-        font-size: 10px;
+        font-size: 20px;
         padding: 10px 20px;
     }
+    input{
+        font-size: 25px;
+        text-align: left;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;  
+    }
+    .footer_logo img{
+        width: 300px;
+        height: 50px;
+        margin-top: 10px;
+    }
 }
-/*===============Quary For Smaller Smartphone ------------ End*/
-/*------------Quary  For tablets , learger Smartphone */
+/*----Quary  For tablets , learger Smartphone
+Responsive :
+     Device : iPad = 768 x 1024 
+    Size: 100%
+
+*/
 @media only screen and (max-width:768px) and (min-width:481px){
     .navbar{
         display: none;
@@ -337,7 +362,7 @@ input{
     .players-cards{
         flex-direction:column;
         justify-content: center;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
     .match_preview{
         display: grid;
@@ -359,7 +384,6 @@ input{
         height: 540px;
         padding-left: 0;
     }
-    }
     .mission{
         display: grid;
         grid-template-columns: repeat(1,1fr);
@@ -368,15 +392,12 @@ input{
         margin-bottom: 800px;
     }
     .mission img{
-        width: 480px;
-        margin-left: 98px;
+        width: 400px;
+        margin-left: 130px;
         margin-top: 80px;
-    }
+    } 
     .mission h2{
         text-align: center;
-    }
-    .btn_three{
-        align-items: center;
     }
     .subscrib{
         display: grid;
@@ -387,29 +408,9 @@ input{
         font-size: 30px;
     }
     .submit{
-        font-size: 10px;
+        font-size: 25px;
         padding: 10px 20px;
     }
 
-
-/* @media screen and (max-width: 480px){
-    body .match_preview{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        justify-content: center;
-    }
-.navbar li a{
-        background: red;
-        display: none;
-    }
-    .hero_head h1{
-        font-size: 30px;
-    }
-    .hero-img img{
-        width: 300px;
-        height: 238px;
-        margin-top: 31px;
-        display: inline-block;
-    }
-} */
-
+}
+/*Laptop Devices*/
