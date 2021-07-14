@@ -9,6 +9,7 @@ body{
 }
 a{
     text-decoration: none;
+    color: white;
 }
 li{
     list-style: none;
@@ -37,6 +38,10 @@ hr{
 .navbar_items a{
     font-size: 16px;
     color: white;
+}
+.navbar_items a:hover{
+    color: #E02C6D;
+    transition: 2s ease;
 }
 .btn {
     border: none;
@@ -210,17 +215,17 @@ input{
     padding: 10px 24px 10px 24px;
     font-size: 16px;
     font-weight: 700;
-    background-color: #ffff;
     border-radius: 2px;  
-    color: #2D25A0; 
     border: 2px solid gainsboro;
+    background-color: white;
+    transition: 2s ease;
 }
-.btn_three:hover{
-    background-color: #E02C6D;
-    color: white;
-    border: 2px solid #E02C6D;
-    transition: ease-in-out 2s;
+.btn_three a{
+    color: #E02C6D;
 }
+
+
+
 /*==================Mission Details Section End=============*/
 /*===================Footer Section Start=====================*/
 .footer{
