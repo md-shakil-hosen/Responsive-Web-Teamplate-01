@@ -1,0 +1,251 @@
+/*========== Font Awsome=============*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+/*=========== common style=============*/
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif; 
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+hr{
+    margin-top: 80px;
+    border: 1px solid gray;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+/*========Header Sextion============*/
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    background-color: #2D25A0;
+}
+.navbar_items li{
+    display: inline-block;
+    padding: 0 15px;
+}
+.navbar_items a{
+    font-size: 16px;
+    color: white;
+}
+.btn {
+    border: none;
+   padding: 10px 24px 10px 24px;
+   font-size: 16px;
+   font-weight: 700;
+   background-color: #E02C6D;
+   border-radius: 2px;
+   margin-right: 30px;
+}
+
+/*================= hero-section =============*/
+.hero_section{
+    background-color: #2D25A0;
+    ;
+   padding: 30px 50px;
+}
+.hero_section{
+    display: flex;
+}
+.hero_head h1{
+    font-family: 'Poppins', sans-serif; 
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.4em;
+    margin-bottom: 36px;
+    color: white;
+    margin-right: 135px;
+}
+.btn a{
+    color: white;
+}
+.btn i{
+    margin-right: 10px;
+    color: white;
+}
+.btn_two {
+    border: none;
+   padding: 10px 24px 10px 24px;
+   font-size: 16px;
+   font-weight: 700;
+   background-color: #E02C6D;
+   border-radius: 2px;  
+   color: white;
+}
+.btn_two i{
+    margin-left: 10px;
+    color: white;
+}
+.hero-img img{
+    width: 556px;
+    height: 438px;
+    margin-top: 31px;
+}
+.btn_two:hover{
+transition: ease-in 1s; 
+background-color: #3dbafd;
+}
+/*=========Palyer Information==========*/
+.players-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    margin-top: 80px;
+    border-radius: 5px;
+    
+}
+.player{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding:15px ;
+    margin-bottom: 25px;
+}
+.player img{
+    width:300px;
+    height: 256px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+.player h1{
+    font-size: 28px;
+}
+.player p{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+/* =================subscrib section============= */
+.subscrib{
+    margin-top: 80px;
+    width: 100%;
+    height: 300px;
+    background-image: url(../images/extra.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 200px;
+}
+.subscrib h1{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 20px;
+}
+.email{
+    text-align: center;
+    font-size: 25px;
+}
+input{
+    font-size: 25px;
+    text-align: left;
+    padding: 10px 60px;
+    border-radius: 5px;
+    border: none;
+}
+.submit{
+    background-color: #E02C6D;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+/*===========Match Preview===========*/
+.match_preview{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr
+    );
+    margin-top: 100px;
+}
+.preview_head{
+    margin-right: 15px;
+    margin-bottom: 150px;
+}
+.preview_head h1{
+    font-family: 'Poppins', sans-serif; 
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.4em;
+    margin-bottom: 36px;
+}
+.preview_head p{
+    font-size: 16px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.preview-img img{
+    width: 560px;
+    height: 420px;
+    padding-left: 20px;
+}
+/*==================Mission=========================*/
+.mission{
+    height: 180px;
+    margin-bottom: 400px;
+}
+.mission{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+}
+.mission h2{
+    font-size: 40px;
+}
+.mission img{
+    width: 480px;
+}
+.btn_three {
+    padding: 10px 24px 10px 24px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #ffff;
+    border-radius: 2px;  
+    color: #2D25A0; 
+    border: 2px solid gainsboro;
+}
+.btn_three:hover{
+    background-color: #E02C6D;
+    color: white;
+    border: 2px solid #E02C6D;
+    transition: ease-in-out 2s;
+}
+/*================footer section=====================*/
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+
+}
+.fab{
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 32px;
+    /* color:#969BAB, 100% ; */
+    font-weight: 500;
+    background-color: #969BAB;
+    opacity:0.5;
+    margin: 3px;
+}
+.footer_logo img{
+    width: 494px;
+    height: 110px;
+    margin-left: -136px;
+    margin-top: 170px;
+}
+.fab:hover{
+    background-color: white;
+    color: #E02C6D;
+    transition: ease 2s;
+}
+
