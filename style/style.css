@@ -248,4 +248,168 @@ input{
     color: #E02C6D;
     transition: ease 2s;
 }
+/*======Media Queries=========*/
+/* Media Quary */
+
+/*-============------Quary  For Smaller Smartphone================*/
+
+@media only screen and (max-width:480px) {
+    .navbar{
+        display: none;
+    }
+    .hero_head h1{
+        font-size: 45px;
+    }
+    .hero_section{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }  
+    .hero-img img{
+        width: 250px;
+        height: 200px;
+    }
+    .players-cards{
+        flex-direction:column;
+        justify-content: center;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .match_preview{
+        display: grid;
+        flex-direction: column;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+    }
+    .preview_head h1{
+        padding: 20px;
+    }
+    .preview_head p{
+        padding: 20px;
+    }
+    .btn_two{
+       margin-left: 30px;
+    }
+    .preview-img img{
+       width: 350px;
+       height: 300px; 
+       padding-left: 0; 
+    }
+    .mission{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 800px;
+    }
+    .mission img{
+        width: 320px;  
+    }
+    .subscrib{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        display: block;
+    }
+    .subscrib h1{
+        font-size: 30px;
+    }
+    .submit{
+        font-size: 10px;
+        padding: 10px 20px;
+    }
+}
+/*===============Quary For Smaller Smartphone ------------ End*/
+/*------------Quary  For tablets , learger Smartphone */
+@media only screen and (max-width:768px) and (min-width:481px){
+    .navbar{
+        display: none;
+    }
+    .hero_head h1{
+        font-size: 55px;
+    }
+    .hero_section{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }  
+    .hero-img img{
+        width: 412px;
+        height: 350px;
+        margin-left: 233px;
+    }
+    .players-cards{
+        flex-direction:column;
+        justify-content: center;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .match_preview{
+        display: grid;
+        flex-direction: column;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+    }
+    .preview_head h1{
+        padding: 20px;
+    }
+    .preview_head p{
+        padding: 20px;
+    }
+    .btn_two{
+       margin-left: 30px;
+    }
+    .preview-img img{
+        width: 691px;
+        height: 540px;
+        padding-left: 0;
+    }
+    }
+    .mission{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 800px;
+    }
+    .mission img{
+        width: 480px;
+        margin-left: 98px;
+        margin-top: 80px;
+    }
+    .mission h2{
+        text-align: center;
+    }
+    .btn_three{
+        align-items: center;
+    }
+    .subscrib{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        display: block;
+    }
+    .subscrib h1{
+        font-size: 30px;
+    }
+    .submit{
+        font-size: 10px;
+        padding: 10px 20px;
+    }
+
+
+/* @media screen and (max-width: 480px){
+    body .match_preview{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+.navbar li a{
+        background: red;
+        display: none;
+    }
+    .hero_head h1{
+        font-size: 30px;
+    }
+    .hero-img img{
+        width: 300px;
+        height: 238px;
+        margin-top: 31px;
+        display: inline-block;
+    }
+} */
 
